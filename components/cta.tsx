@@ -1,0 +1,28 @@
+import { Button } from "@/components/ui/button"
+import { Shield } from "lucide-react"
+
+export default function CTA() {
+  return (
+    <section className="border-t">
+      <div className="container flex flex-col items-center gap-4 py-24 text-center md:py-32">
+        <Shield className="h-12 w-12 text-primary mb-4" />
+        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
+          Ready to secure your data with Echelon X?
+        </h2>
+        <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+          Join hundreds of testers across the globe and help us improve Echelon X. Experience the next generation of
+          encryption technology today.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 mt-8">
+          <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600">
+            Request a Demo
+          </Button>
+          <Button variant="outline" size="lg">
+            Contact Sales
+          </Button>
+        </div>
+      </div>
+    </section>
+  )
+}
+

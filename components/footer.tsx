@@ -53,7 +53,7 @@ const Footer = forwardRef(({ ...props }, ref) => {
               href="mailto:contact@threatnexus.in"
               className="text-sm text-muted-foreground transition-colors hover:text-primary"
             >
-              Contact
+              Contact Us
             </Link>
           </div>
         </div>

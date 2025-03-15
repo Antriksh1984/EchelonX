@@ -14,27 +14,6 @@ const Footer = forwardRef(({ ...props }, ref) => {
           <p className="text-sm text-muted-foreground">Secure. Defend. Evolve</p>
           <p className="text-sm text-muted-foreground">Founded by Antriksh</p>
         </div>
-        <div className="grid flex-1 grid-cols-2 gap-12 sm:grid-cols-3">
-          <div className="space-y-4">
-            <h3 className="text-sm font-medium">Product</h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="#features" className="text-muted-foreground transition-colors hover:text-primary">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link href="#comparison" className="text-muted-foreground transition-colors hover:text-primary">
-                  Comparison
-                </Link>
-              </li>
-              <li>
-                <Link href="#use-cases" className="text-muted-foreground transition-colors hover:text-primary">
-                  Use Cases
-                </Link>
-              </li>
-            </ul>
-          </div>
           <div className="space-y-4">
             <h3 className="text-sm font-medium">Company</h3>
             <ul className="space-y-3 text-sm">

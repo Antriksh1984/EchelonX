@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import Footer from "@/components/footer"; // Default import
 import { Button } from "@/components/ui/button";
 
 export default function GetStarted() {
@@ -15,14 +15,13 @@ export default function GetStarted() {
       <div className="relative z-10">
         <Navbar />
         <section className="container py-24 max-w-screen-2xl">
-          <h1 className="text-4xl font-bold text-center mb-8">Join Echelon X BETA Test</h1>
+          <h1 className="text-4xl font-bold text-center mb-8">Join Echelon X Testers</h1>
           <div className="mt-4 p-4 bg-muted rounded-lg border border-border shadow-sm max-w-md mx-auto">
             <form
-              action="https://formspree.io/f/mjkykgal" // Your Formspree endpoint
+              action="https://formspree.io/f/mjkykgal"
               method="POST"
               className="space-y-4"
             >
-              <input type="hidden" name="_next" value="https://threatnexus.in" />
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">
                   Name

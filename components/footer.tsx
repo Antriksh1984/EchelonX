@@ -43,11 +43,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-muted-foreground transition-colors hover:text-primary">
-                  Careers
-                </Link>
-              </li>
-              <li>
                 <Link 
                   href="mailto:contact@threatnexus.in" 
                   className="text-muted-foreground transition-colors hover:text-primary"

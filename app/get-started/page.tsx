@@ -34,7 +34,7 @@ export default function GetStarted() {
       <div className="relative z-10">
         <Navbar />
         <section className="container py-24 max-w-screen-2xl">
-          <h1 className="text-4xl font-bold text-center mb-8">Get started with Threat Nexus</h1>
+          <h1 className="text-4xl font-bold text-center mb-8">Join Echelon X Testers</h1>
           <div className="max-w-md mx-auto bg-background p-6 rounded-lg shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -60,10 +60,12 @@ export default function GetStarted() {
                   id="email"
                   name="email"
                   value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                />
+                  onChange={handle
+
+Change = (e) => {
+                    setFormData((prev) => ({ ...prev, [name]: value }));
+                  };
+                }
               </div>
               <div>
                 <label htmlFor="hardwareConfig" className="block text-sm font-medium text-foreground mb-1">
@@ -85,7 +87,7 @@ export default function GetStarted() {
             </form>
           </div>
         </section>
-        <Footer />
+        <Footer className="bg-background" />
       </div>
     </div>
   );

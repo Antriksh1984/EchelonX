@@ -15,7 +15,7 @@ export default function GetStarted() {
       <div className="relative z-10">
         <Navbar />
         <section className="container py-24 max-w-screen-2xl">
-          <h1 className="text-4xl font-bold text-center mb-8">Join Echelon X Testers</h1>
+          <h1 className="text-4xl font-bold text-center mb-8">Join to access Echelon X Public BETA</h1>
           <div className="mt-4 p-4 bg-muted rounded-lg border border-border shadow-sm max-w-md mx-auto">
             <form
               action="https://formspree.io/f/mjkykgal"

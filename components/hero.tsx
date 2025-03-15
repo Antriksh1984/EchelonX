@@ -1,7 +1,14 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Shield, Lock, Zap } from "lucide-react"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Shield, Lock, Zap } from "lucide-react";
 
 export default function Hero() {
+  const [showMessage, setShowMessage] = useState(false);
+
+  const handleGetStartedClick = () => {
+    setShowMessage(true);
+  };
+
   return (
     <section className="container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 py-24 text-center md:py-32">
       <div className="flex items-center justify-center mb-6">
@@ -23,7 +30,11 @@ export default function Hero() {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4">
-        <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600">
+        <Button 
+          size="lg" 
+          className="bg-gradient-to-r from-blue-600 to-purple-600"
+          onClick={handleGetStartedClick}
+        >
           Get Started
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
@@ -31,7 +42,11 @@ export default function Hero() {
           Watch Demo
         </Button>
       </div>
+      {showMessage && (
+        <div className="mt-4 p-4 bg-primary/10 text-primary rounded-lg">
+          Email your hardware configuration to <a href="mailto:testers@threatnexus.in" className="underline">testers@threatnexus.in</a>
+        </div>
+      )}
     </section>
-  )
+  );
 }
-

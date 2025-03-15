@@ -60,12 +60,10 @@ export default function GetStarted() {
                   id="email"
                   name="email"
                   value={formData.email}
-                  onChange={handle
-
-Change = (e) => {
-                    setFormData((prev) => ({ ...prev, [name]: value }));
-                  };
-                }
+                  onChange={handleChange}
+                  required
+                  className="w-full p-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                />
               </div>
               <div>
                 <label htmlFor="hardwareConfig" className="block text-sm font-medium text-foreground mb-1">

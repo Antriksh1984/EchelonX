@@ -12,7 +12,11 @@ export default function Hero() {
   };
 
   const handleWatchDemoClick = () => {
-    window.location.href = "https://youtu.be/Z2kxd8rMAOo?feature=shared"; // Redirects to YouTube
+    window.open("https://youtu.be/Z2kxd8rMAOo?feature=shared", "_blank"); // Opens in new tab
+  };
+
+  const handleOkayClick = () => {
+    setShowMessage(false); // Hides the message
   };
 
   return (
@@ -53,8 +57,20 @@ export default function Hero() {
         </Button>
       </div>
       {showMessage && (
-        <div className="mt-4 p-4 bg-primary/10 text-primary rounded-lg">
-          Email your hardware configuration to <a href="mailto:testers@threatnexus.in" className="underline">testers@threatnexus.in</a>
+        <div className="mt-4 p-4 bg-primary/10 text-primary rounded-lg flex flex-col items-center gap-2">
+          <p>
+            Email your hardware configuration to{" "}
+            <a href="mailto:testers@threatnexus.in" className="underline">
+              testers@threatnexus.in
+            </a>
+          </p>
+          <Button 
+            variant="outline" 
+            size="sm"
+            onClick={handleOkayClick}
+          >
+            Okay
+          </Button>
         </div>
       )}
     </section>

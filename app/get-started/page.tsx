@@ -2,27 +2,8 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
 
 export default function GetStarted() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    hardwareConfig: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for joining Echelon X Testers! We’ll get back to you soon.");
-    setFormData({ name: "", email: "", hardwareConfig: "" });
-  };
-
   return (
     <div className="relative min-h-screen">
       <div className="pointer-events-none fixed inset-0">
@@ -36,7 +17,12 @@ export default function GetStarted() {
         <section className="container py-24 max-w-screen-2xl">
           <h1 className="text-4xl font-bold text-center mb-8">Join Echelon X Testers</h1>
           <div className="mt-4 p-4 bg-muted rounded-lg border border-border shadow-sm max-w-md mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form
+              action="https://formspree.io/f/mjkykgal" // Your Formspree endpoint
+              method="POST"
+              className="space-y-4"
+            >
+              <input type="hidden" name="_next" value="https://threatnexus.in" />
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">
                   Name
@@ -45,8 +31,6 @@ export default function GetStarted() {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
                   className="w-full p-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 />
@@ -59,8 +43,6 @@ export default function GetStarted() {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                   className="w-full p-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 />
@@ -72,8 +54,6 @@ export default function GetStarted() {
                 <textarea
                   id="hardwareConfig"
                   name="hardwareConfig"
-                  value={formData.hardwareConfig}
-                  onChange={handleChange}
                   required
                   rows={4}
                   className="w-full p-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"

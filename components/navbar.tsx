@@ -1,8 +1,13 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Github, Shield } from "lucide-react"
+"use client"; // Required for onClick handler
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Github, Shield } from "lucide-react";
 
-export default function Navbar() {
+export default function Navbar({ footerRef }) {
+  const scrollToFooter = () => {
+    footerRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
@@ -28,14 +33,12 @@ export default function Navbar() {
               <span className="sr-only">GitHub</span>
             </Button>
           </Link>
-          {/* Contact button now with default Button styling (white box) */}
-          <Link href="#footer" scroll={true}>
-            <Button size="sm">
-              Contact
-            </Button>
-          </Link>
+          {/* Contact button with default Button styling (white box) */}
+          <Button size="sm" onClick={scrollToFooter}>
+            Contact
+          </Button>
         </div>
       </div>
     </header>
-  )
+  );
 }

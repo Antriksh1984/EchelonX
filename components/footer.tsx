@@ -1,9 +1,10 @@
-import Link from "next/link"
-import { Github, Twitter, Linkedin, Mail, Shield } from "lucide-react"
+import Link from "next/link";
+import { Github, Twitter, Linkedin, Mail, Shield } from "lucide-react";
+import { forwardRef } from "react";
 
-export default function Footer() {
+const Footer = forwardRef(({ ...props }, ref) => {
   return (
-    <footer id="footer" className="border-t"> {/* Added id="footer" */}
+    <footer id="footer" ref={ref} className="border-t" {...props}>
       <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12">
         <div className="flex-1 space-y-4">
           <div className="flex items-center">
@@ -43,8 +44,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="mailto:contact@threatnexus.in" 
+                <Link
+                  href="mailto:contact@threatnexus.in"
                   className="text-muted-foreground transition-colors hover:text-primary"
                 >
                   Contact
@@ -93,5 +94,8 @@ export default function Footer() {
         </p>
       </div>
     </footer>
-  )
-}
+  );
+});
+
+Footer.displayName = "Footer";
+export default Footer;

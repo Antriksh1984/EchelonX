@@ -1,17 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Lock, Zap } from "lucide-react";
 
 export default function Hero() {
-  const [showMessage, setShowMessage] = useState(false);
-
-  const handleGetStartedClick = () => {
-    setShowMessage(true);
-    setTimeout(() => setShowMessage(false), 5000); // Hides after 5 seconds
-  };
-
   const handleWatchDemoClick = () => {
     window.open("https://youtu.be/Z2kxd8rMAOo?feature=shared", "_blank"); // Opens in new tab
   };
@@ -37,35 +30,16 @@ export default function Hero() {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4">
-        <Button 
-          size="lg" 
-          className="bg-gradient-to-r from-blue-600 to-purple-600"
-          onClick={handleGetStartedClick}
-        >
-          Get Started
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
-        <Button 
-          variant="outline" 
-          size="lg"
-          onClick={handleWatchDemoClick}
-        >
+        <Link href="/get-started" target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600">
+            Get Started
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </Link>
+        <Button variant="outline" size="lg" onClick={handleWatchDemoClick}>
           Watch Demo
         </Button>
       </div>
-      {showMessage && (
-        <div className="mt-4 p-4 bg-muted rounded-lg border border-border shadow-sm max-w-md">
-        <p className="text-sm text-muted-foreground">
-          Email your hardware configuration at{" "}
-          <a 
-            href="mailto:testers@threatnexus.in" 
-            className="text-primary hover:underline"
-          >
-            testers@threatnexus.in
-          </a>
-        </p>
-      </div>
-      )}
     </section>
   );
 }

@@ -39,11 +39,6 @@ const Footer = forwardRef(({ ...props }, ref) => {
             <h3 className="text-sm font-medium">Company</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/about" className="text-muted-foreground transition-colors hover:text-primary">
-                  About Us
-                </Link>
-              </li>
-              <li>
                 <Link
                   href="mailto:contact@threatnexus.in"
                   className="text-muted-foreground transition-colors hover:text-primary"

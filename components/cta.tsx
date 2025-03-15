@@ -41,7 +41,7 @@ export default function CTA() {
         {showMessage && (
           <div className="mt-4 p-4 bg-muted rounded-lg border border-border shadow-sm max-w-md">
             <p className="text-sm text-muted-foreground">
-              Email your hardware configuration at{" "}
+              Reach us at{" "}
               <a 
                 href="mailto:testers@threatnexus.in" 
                 className="text-primary hover:underline"

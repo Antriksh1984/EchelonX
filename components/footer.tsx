@@ -10,7 +10,7 @@ export default function Footer() {
             <Shield className="h-5 w-5 text-primary mr-2" />
             <h2 className="font-bold">Threat Nexus</h2>
           </div>
-          <p className="text-sm text-muted-foreground">Pioneering encryption solutions for the digital age.</p>
+          <p className="text-sm text-muted-foreground">Secure. Defend. Evolve</p>
           <p className="text-sm text-muted-foreground">Founded by Antriksh</p>
         </div>
         <div className="grid flex-1 grid-cols-2 gap-12 sm:grid-cols-3">

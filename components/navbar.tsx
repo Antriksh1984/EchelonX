@@ -28,13 +28,12 @@ export default function Navbar() {
               <span className="sr-only">GitHub</span>
             </Button>
           </Link>
-          {/* Restored Contact button with scroll to footer */}
+          {/* Contact button now with default Button styling (white box) */}
           <Link href="#footer" scroll={true}>
-            <Button variant="ghost" size="sm">
+            <Button size="sm">
               Contact
             </Button>
           </Link>
-          <Button size="sm">Get a Demo</Button>
         </div>
       </div>
     </header>

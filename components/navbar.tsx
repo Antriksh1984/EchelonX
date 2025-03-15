@@ -28,13 +28,15 @@ export default function Navbar() {
               <span className="sr-only">GitHub</span>
             </Button>
           </Link>
-          <Button variant="ghost" size="sm">
-            Contact
-          </Button>
+          {/* Modified Contact button */}
+          <Link href="#footer" scroll={true}>
+            <Button variant="ghost" size="sm">
+              Contact
+            </Button>
+          </Link>
           <Button size="sm">Get a Demo</Button>
         </div>
       </div>
     </header>
   )
 }
-

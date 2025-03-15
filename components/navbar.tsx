@@ -8,6 +8,14 @@ export default function Navbar({ footerRef }) {
     footerRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleScroll = (e, id) => {
+    e.preventDefault(); // Prevent default link behavior
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
@@ -16,13 +24,25 @@ export default function Navbar({ footerRef }) {
           <span className="font-bold">Threat Nexus</span>
         </Link>
         <nav className="flex flex-1 items-center space-x-6 text-sm font-medium">
-          <Link href="#features" className="transition-colors hover:text-primary">
+          <Link
+            href="#features"
+            onClick={(e) => handleScroll(e, "#features")}
+            className="transition-colors hover:text-primary"
+          >
             Features
           </Link>
-          <Link href="#comparison" className="transition-colors hover:text-primary">
+          <Link
+            href="#comparison"
+            onClick={(e) => handleScroll(e, "#comparison")}
+            className="transition-colors hover:text-primary"
+          >
             Comparison
           </Link>
-          <Link href="#use-cases" className="transition-colors hover:text-primary">
+          <Link
+            href="#use-cases"
+            onClick={(e) => handleScroll(e, "#use-cases")}
+            className="transition-colors hover:text-primary"
+          >
             Use Cases
           </Link>
         </nav>

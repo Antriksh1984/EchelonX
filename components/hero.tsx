@@ -32,7 +32,7 @@ export default function Hero() {
       <div className="flex flex-col sm:flex-row gap-4">
         <Link href="/get-started" target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600">
-            Get Started
+            Get BETA Access
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </Link>

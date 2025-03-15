@@ -43,7 +43,7 @@ export default function CTA() {
             <p className="text-sm text-muted-foreground">
               Reach us at{" "}
               <a 
-                href="mailto:testers@threatnexus.in" 
+                href="mailto:demo@threatnexus.in" 
                 className="text-primary hover:underline"
               >
                 testers@threatnexus.in

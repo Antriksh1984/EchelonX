@@ -7,7 +7,7 @@ import MouseMoveEffect from "@/components/mouse-move-effect"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Echelon X by Threat Nexus - Speed, Security, and Zero Trust in Every Byte",
+  title: "Threat Nexus",
   description:
     "Next generation encryption solution that processes data at 1GB/s with zero-trust architecture and cloud resilience.",
     generator: 'v0.dev'

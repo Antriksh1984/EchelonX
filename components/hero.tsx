@@ -9,8 +9,7 @@ export default function Hero() {
 
   const handleGetStartedClick = () => {
     setShowMessage(true);
-    // Automatically hide the message after 5 seconds
-    setTimeout(() => setShowMessage(false), 5000);
+    setTimeout(() => setShowMessage(false), 5000); // Hides after 5 seconds
   };
 
   const handleWatchDemoClick = () => {

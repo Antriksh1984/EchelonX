@@ -54,14 +54,17 @@ export default function Hero() {
         </Button>
       </div>
       {showMessage && (
-        <div className="mt-4 p-4 bg-primary/10 text-primary rounded-lg">
-          <p>
-            Email your hardware configuration to{" "}
-            <a href="mailto:testers@threatnexus.in" className="underline">
-              testers@threatnexus.in
-            </a>
-          </p>
-        </div>
+        <div className="mt-4 p-4 bg-muted rounded-lg border border-border shadow-sm max-w-md">
+        <p className="text-sm text-muted-foreground">
+          Email your hardware configuration to{" "}
+          <a 
+            href="mailto:testers@threatnexus.in" 
+            className="text-primary hover:underline"
+          >
+            testers@threatnexus.in
+          </a>
+        </p>
+      </div>
       )}
     </section>
   );

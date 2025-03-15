@@ -46,7 +46,7 @@ export default function CTA() {
                 href="mailto:demo@threatnexus.in" 
                 className="text-primary hover:underline"
               >
-                testers@threatnexus.in
+                demo@threatnexus.in
               </a>
             </p>
           </div>

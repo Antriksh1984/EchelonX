@@ -35,7 +35,7 @@ export default function GetStarted() {
         <Navbar />
         <section className="container py-24 max-w-screen-2xl">
           <h1 className="text-4xl font-bold text-center mb-8">Join Echelon X Testers</h1>
-          <div className="max-w-md mx-auto bg-background p-6 rounded-lg shadow-lg">
+          <div className="mt-4 p-4 bg-muted rounded-lg border border-border shadow-sm max-w-md mx-auto">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">

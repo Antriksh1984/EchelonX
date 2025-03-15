@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Lock, Zap } from "lucide-react";
@@ -8,6 +9,10 @@ export default function Hero() {
 
   const handleGetStartedClick = () => {
     setShowMessage(true);
+  };
+
+  const handleWatchDemoClick = () => {
+    window.location.href = "https://youtu.be/Z2kxd8rMAOo?feature=shared"; // Redirects to YouTube
   };
 
   return (
@@ -39,7 +44,11 @@ export default function Hero() {
           Get Started
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
-        <Button variant="outline" size="lg">
+        <Button 
+          variant="outline" 
+          size="lg"
+          onClick={handleWatchDemoClick}
+        >
           Watch Demo
         </Button>
       </div>

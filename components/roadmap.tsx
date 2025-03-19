@@ -11,7 +11,7 @@ const roadmapItems = [
     year: "2025",
     title: "Seamless Cloud Integration with Local Storage",
     description:
-      "One-click sync with AWS S3 & Google Drive, enabling secure cloud storage without compromising encryption. Automated backup & recovery, ensuring data availability even in worst-case scenarios. Also implementing local storage options for users who prefer to keep their data on-premises using.",
+      "One-click sync with AWS S3 & Google Drive, enabling secure cloud storage without compromising encryption. Automated backup & recovery, ensuring data availability even in worst-case scenarios. Also implementing local storage options for users who prefer to keep their data on-premises using TPM.",
   },
   {
     year: "Long-Term",

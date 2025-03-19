@@ -11,7 +11,7 @@ const comparisonData = [
   },
   {
     feature: "Key Management",
-    echelonX: "AWS Secrets Manager + SSS",
+    echelonX: "AWS Secrets Manager + SSS + TPM",
     pgpGpg: "Local keyring + RSA",
     veraCrypt: "Local password/keyfile",
     bitLocker: "TPM + Microsoft AD",
@@ -51,7 +51,7 @@ const comparisonData = [
   },
   {
     feature: "Unique Selling Point",
-    echelonX: "AI + layered encryption + SSS + AWS hybrid",
+    echelonX: "AI + layered encryption + SSS + AWS hybrid + TPM",
     pgpGpg: "Open standard, interoperable",
     veraCrypt: "Free, open-source disk encryption",
     bitLocker: "Native Windows integration",

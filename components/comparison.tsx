@@ -43,7 +43,7 @@ const comparisonData = [
   },
   {
     feature: "Performance",
-    echelonX: "~700 MB/s",
+    echelonX: "~1 GB/s",
     pgpGpg: "~200 MB/s",
     veraCrypt: "~500 MB/s",
     bitLocker: "~600 MB/s",

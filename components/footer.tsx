@@ -34,7 +34,7 @@ const Footer = forwardRef(({ ...props }, ref) => {
               <span className="sr-only">Twitter</span>
             </Link>
             <Link
-              href="https://linkedin.com/company/threatnexus"
+              href="https://linkedin.com/company/threat-nexus"
               className="text-muted-foreground transition-colors hover:text-primary"
             >
               <Linkedin className="h-5 w-5" />

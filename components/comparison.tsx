@@ -18,14 +18,6 @@ const comparisonData = [
     cryptomator: "Passphrase + cloud metadata",
   },
   {
-    feature: "Multi-Layer Encryption",
-    echelonX: true,
-    pgpGpg: false,
-    veraCrypt: false,
-    bitLocker: false,
-    cryptomator: false,
-  },
-  {
     feature: "Shamir’s Secret Sharing",
     echelonX: true,
     pgpGpg: false,

@@ -9,29 +9,26 @@ import TechnicalSpecs from "@/components/technical-specs";
 import Roadmap from "@/components/roadmap";
 import CTA from "@/components/cta";
 import Footer from "@/components/footer";
-
+import OtherServices from "@/components/other-services"; // New import
 export default function Home() {
-  const footerRef = useRef(null);
-
   return (
     <div className="relative min-h-screen">
       {/* Background gradients */}
       <div className="pointer-events-none fixed inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
-        <div className="absolute right-0 top-0 h-[500px] w-[500px] bg-blue-500/10 blur-[100px]" />
-        {/* Removed the purple gradient */}
       </div>
 
       <div className="relative z-10">
-        <Navbar footerRef={footerRef} />
+        <Navbar />
         <Hero />
         <Features />
+        <OtherServices /> {/* Add here */}
         <Comparison />
         <UseCases />
         <TechnicalSpecs />
         <Roadmap />
         <CTA />
-        <Footer ref={footerRef} />
+        <Footer />
       </div>
     </div>
   );

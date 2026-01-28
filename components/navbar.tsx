@@ -48,14 +48,6 @@ export default function Navbar({ footerRef }) {
           >
             Use Cases
           </Link>
-
-          {/* ⭐ New Legal Notice link */}
-          <Link
-            href="/legal-notice"
-            className="transition-colors hover:text-primary"
-          >
-            Legal Notice
-          </Link>
         </nav>
 
         <div className="flex items-center space-x-4">

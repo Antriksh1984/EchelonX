@@ -1,5 +1,5 @@
 "use client";
-// src/components/other-services.tsx
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FileText } from "lucide-react";
@@ -56,7 +56,7 @@ export default function OtherServices() {
             </ul>
           </div>
 
-          {/* ⭐ NEW — Legal Notice / Compliance Card */}
+          {/* Legal / Compliance */}
           <div className="bg-muted/50 p-6 rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow">
             <div className="flex items-start space-x-4 mb-4">
               <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center">
@@ -65,10 +65,35 @@ export default function OtherServices() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Legal Notices & Compliance</h3>
                 <p className="text-sm text-muted-foreground">
-                  Transparent policies and legal safeguards for users and organizations. Review how we handle rights, liabilities, and compliance.
+                  Transparent policies and legal safeguards for users and organizations.
                 </p>
               </div>
             </div>
             <ul className="text-sm text-foreground space-y-1 mb-4">
               <li>• Liability & warranty disclaimers</li>
-              <li>• Third-
+              <li>• Third-party service transparency</li>
+              <li>• Terms & policy compliance</li>
+              <li>• Data protection standards</li>
+            </ul>
+
+            <Link
+              href="/legal-notice"
+              className="inline-block mt-2 text-primary hover:underline text-sm"
+            >
+              View Legal Notice →
+            </Link>
+          </div>
+
+        </div>
+
+        <div className="text-center mt-12">
+          <a href="mailto:antrikshsingh@threatnexus.in">
+            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600">
+              Get a Free Consultation
+            </Button>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
